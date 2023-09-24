@@ -29,7 +29,7 @@ class PhoneNumberValidatorTest {
     }
 
     @Test
-    void itShouldValidatePhoneNumberWhenIncorrect() {
+    void itShouldValidatePhoneNumberWhenIncorrectAndHasLengthBiggerThen13() {
 
         //given
         String phoneNumber = "+479181523576510";
