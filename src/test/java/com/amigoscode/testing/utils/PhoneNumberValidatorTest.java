@@ -28,5 +28,19 @@ class PhoneNumberValidatorTest {
         assertThat(isValid).isTrue();
     }
 
+    @Test
+    void itShouldValidatePhoneNumberWhenIncorrect() {
+
+        //given
+        String phoneNumber = "+479181523576510";
+
+        //when
+        boolean isValid = undertest.test(phoneNumber);
+
+        //then
+
+        assertThat(isValid).isFalse();
+    }
+
 }
 
